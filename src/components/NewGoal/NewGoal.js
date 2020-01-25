@@ -9,7 +9,7 @@ const NewGoal = (props) => {
             id: Math.random().toString(),
             text: "My new Goal"
         }
-        console.log(newGoal)
+        props.onNewGoal(newGoal)
     }
     return <form className="new-goal" onSubmit={addGoalHandler}>
         <input type="text" />
